@@ -26703,15 +26703,53 @@
 /* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    'About Component'
+	    React.createElement(
+	      "h1",
+	      { className: "text-center" },
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "This is a simple weather application, which one can search for weather temperature of cities around the globe."
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Here are some of the tools I've used:"
+	    ),
+	    React.createElement(
+	      "ul",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "https://reactjs.org/" },
+	          "React"
+	        ),
+	        " - This was the JavaScript library used."
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "http://openweathermap.org" },
+	          "Open Weather Map"
+	        ),
+	        " - API used to search for weather data by city name."
+	      )
+	    )
 	  );
 	};
 
