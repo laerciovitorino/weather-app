@@ -24945,21 +24945,37 @@
 	var Nav = function Nav() {
 	  return React.createElement(
 	    'div',
-	    null,
+	    { className: 'top-bar' },
 	    React.createElement(
-	      'h2',
-	      null,
-	      'Nav Component'
-	    ),
-	    React.createElement(
-	      IndexLink,
-	      { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	      'Get Weather'
-	    ),
-	    React.createElement(
-	      Link,
-	      { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	      'About'
+	      'div',
+	      { className: 'top-bar-left' },
+	      React.createElement(
+	        'ul',
+	        { className: 'menu' },
+	        React.createElement(
+	          'li',
+	          { className: 'menu-text' },
+	          'Weather App'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            IndexLink,
+	            { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	            'Get Weather'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	            'About'
+	          )
+	        )
+	      )
 	    )
 	  );
 	};
