@@ -25658,7 +25658,7 @@
 	      React.createElement(
 	        'form',
 	        { onSubmit: this.onFormSubmit },
-	        React.createElement('input', { type: 'text', ref: 'location' }),
+	        React.createElement('input', { type: 'text', ref: 'location', placeholder: 'Enter a city name' }),
 	        React.createElement(
 	          'button',
 	          { className: 'button expanded hollow' },
